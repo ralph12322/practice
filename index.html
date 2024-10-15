@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practiceOBJ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #message {
+            width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            margin: 10px 0;
+            background-color: #e4e9f0;
+            color: #333;
+            font-size: 16px;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #submit {
+            background-color: #a8dadc;
+            color: #333;
+        }
+
+        #submit:hover {
+            background-color: #81c7c4;
+        }
+
+        #selections button {
+            background-color: #ffb4b4;
+            color: #333;
+        }
+
+        #selections button:hover {
+            background-color: #ff9393;
+        }
+
+        p, #summary {
+            font-size: 16px;
+            color: #555;
+        }
+
+        #display {
+            font-size: 18px;
+            font-weight: bold;
+            color: #5e6472;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Products: socks, shirt, bag, shoes</h3>
+    <input type="text" id="get" placeholder="Please input a product">
+    <button id="submit">FIND</button>
+    <div id="message">
+        <p id="display" style="display: none;"></p>
+
+        <div id="selections" style="display: none;">
+            <button id="small">Small</button>
+            <button id="medium">Medium</button>
+            <button id="large">Large</button>
+        </div>
+        
+        <p id="summary"></p>
+    </div>
+
+
+</body>
+</html>
+
+<script src="script.js"></script>
